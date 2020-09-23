@@ -3,7 +3,7 @@
 This repository holds the code implemented in the two following papers:
 
 1. "Ensemble Learning for Improving Generalization in Aeroponics Yield Prediction" being presented at the IEEE conference ISCAS 2020 in Spain.
-2. "Interpretability of AI Models that use Data Fusion to Predict Yield in Aeroponics", currently submitted to Precision Agriculture, an International Journal on Advances in Precision Agriculture.
+2. "Interpretability of AI Models that use Data Fusion to Predict Yield in Aeroponics", currently under consideration.
 
 # Ensemble Learning for Improving Generalization in Aeroponics Yield Prediction
 
