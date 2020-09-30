@@ -19,7 +19,10 @@ This part of the project contains 4 files (Jupyter notebooks): NeuralNetwork, Ra
 
 The second part of this repository corresponds to the Python implementation for the second paper (currently under consideration).
 
-# Notes
+# Data availability
 
-1. Proper reference to the papers will be added once they are published.
-2. The data used in this project is publicly available at: https://data.mendeley.com/datasets/wmyktpx9hv/1
+The data used in this project is publicly available at: https://data.mendeley.com/datasets/wmyktpx9hv/1
+
+# References
+
+J. Torres-Tello, S. Venkatachalam, L. Moreno and S. -B. Ko, "Ensemble Learning for Improving Generalization in Aeroponics Yield Prediction," 2020 IEEE International Symposium on Circuits and Systems (ISCAS), Sevilla, 2020, pp. 1-5, doi: 10.1109/ISCAS45731.2020.9181283.
