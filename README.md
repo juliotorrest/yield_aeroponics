@@ -19,7 +19,10 @@ The second part of this repository corresponds to the Python implementation for 
 
 This paper has two main goals: (i) use data fusion to improve yield prediction in aeroponics, and (ii) find which features are more relevant for yield prediction of the six crops. To reach these goals, a number of artificial intelligence models and an interpretability analysis based on SHapley Additive exPlanations (SHAP) have been implemented. The models were trained using 200 samples that were collected for almost a year, including information from different air and water quality sensors besides manually recorded data, reaching in the end a coefficient of determination value R2 = 0.843 for the validation dataset in the best case (CNN-based model). As a result, two main features were identified in the dataset: Room CO2 and Reservoir Temperature, along with other useful insights of how these features influence predictions. SHAP values also provided important information for feature selection.
 
-These results could be the first steps towards the full automation of an aeroponics crop production system.
+The models originally presented in the first paper have been re-trained with different regularization parameters for this work, achieving better
+performance metrics (MAE and MSE could not be compared due to the usage of different units). These models constitute the baseline for the models that use data fusion. The training process of all the algorithms involved k-fold cross validation (k=10), a commonly used procedure to evaluate AI models on datasets of limited size. 
+
+Our AI models were implemented in Python 3.7, using Scikit Learn 0.22 for SVR and RF, and Tensorflow 2.0 for the other models. They were trained on a dedicated server with 64 Intel(R) Xeon(R) Gold 6130 CPU's at 2.10GHz, 1.6 TB of RAM, and a Nvidia Tesla V100-PCIE-16GB GPU.
 
 # Data availability
 
