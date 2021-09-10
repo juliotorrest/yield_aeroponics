@@ -3,7 +3,7 @@
 This repository holds the code implemented in the two following papers:
 
 1. "Ensemble Learning for Improving Generalization in Aeroponics Yield Prediction" being presented at the IEEE conference ISCAS 2020 in Spain.
-2. "Interpretability of AI Models that use Data Fusion to Predict Yield in Aeroponics", currently under consideration.
+2. "Interpretability of AI Models that use Data Fusion to Predict Yield in Aeroponics", published in the Journal of Ambient Intelligence and Humanized Computing.
 
 # Ensemble Learning for Improving Generalization in Aeroponics Yield Prediction
 
@@ -15,12 +15,12 @@ This part of the project contains 4 files (Jupyter notebooks): NeuralNetwork, Ra
 
 # Interpretability of AI Models that use Data Fusion to Predict Yield in Aeroponics
 
-The second part of this repository corresponds to the Python implementation for the second paper (currently under review).
+The second part of this repository corresponds to the Python implementation for the second paper.
 
 This paper has two main goals: (i) use data fusion to improve yield prediction in aeroponics, and (ii) find which features are more relevant for yield prediction of the six crops. To reach these goals, a number of artificial intelligence models and an interpretability analysis based on SHapley Additive exPlanations (SHAP) have been implemented. The models were trained using 200 samples that were collected for almost a year, including information from different air and water quality sensors besides manually recorded data, reaching in the end a coefficient of determination value R2 = 0.752 for the validation dataset in the best case (CNN-based model). As a result, two main features were identified in the dataset: Room CO2 and Reservoir Temperature, along with other useful insights of how these features influence predictions. SHAP values also provided important information for feature selection.
 
 The models originally presented in the first paper have been re-trained with different regularization parameters for this work, achieving better
-performance metrics (MAE and MSE could not be compared due to the usage of different units). These models constitute the baseline for the models that use data fusion. The training process of all the algorithms involved repeated cross validation and grid search for hyperparameters, in some cases.
+performance metrics (MAE and MSE could not be compared due to the usage of different units). These models constitute the baseline for the models that use data fusion. The training process of all the algorithms involved repeated cross validation, and grid search for hyperparameters in some cases.
 
 Our AI models were implemented in Python 3.7, using Scikit Learn 0.22 for SVR and RF, and Tensorflow 2.0 for the other models. They were trained on a dedicated server with 64 Intel(R) Xeon(R) Gold 6130 CPU's at 2.10GHz, 1.6 TB of RAM, and a Nvidia Tesla V100-PCIE-16GB GPU.
 
@@ -30,4 +30,6 @@ The data used in this project is publicly available at: https://data.mendeley.co
 
 # References
 
-J. Torres-Tello, S. Venkatachalam, L. Moreno and S. -B. Ko, "Ensemble Learning for Improving Generalization in Aeroponics Yield Prediction," 2020 IEEE International Symposium on Circuits and Systems (ISCAS), Sevilla, 2020, pp. 1-5, doi: 10.1109/ISCAS45731.2020.9181283.
+[1] J. Torres-Tello, S. Venkatachalam, L. Moreno and S. -B. Ko, "Ensemble Learning for Improving Generalization in Aeroponics Yield Prediction," 2020 IEEE International Symposium on Circuits and Systems (ISCAS), 2020, pp. 1-5, https://doi.org/10.1109/ISCAS45731.2020.9181283.
+
+[2] Torres-Tello, J., Ko, SB. Interpretability of artificial intelligence models that use data fusion to predict yield in aeroponics. J Ambient Intell Human Comput (2021). https://doi.org/10.1007/s12652-021-03470-9
